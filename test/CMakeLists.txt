@@ -6,6 +6,10 @@ set(MR_TEST_SOURCES
   mr_test_main.cpp
   test_core.cpp
   test_coordinator.cpp
+  test_persistence.cpp
+  test_property.cpp
+  test_concurrency.cpp
+  test_adversarial.cpp
 )
 
 add_executable(mr_tests ${MR_TEST_SOURCES})

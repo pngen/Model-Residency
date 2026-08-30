@@ -105,6 +105,8 @@ class MemoryDomainPool {
   [[nodiscard]] std::vector<MemoryDomainId> ids() const;
   [[nodiscard]] std::size_t size() const noexcept { return domains_.size(); }
 
+  void clear() noexcept { domains_.clear(); }
+
  private:
   std::vector<MemoryDomain> domains_;
 };

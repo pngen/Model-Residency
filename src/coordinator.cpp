@@ -1,7 +1,12 @@
 #include "mr/coordinator.hpp"
 
 #include <algorithm>
+#include <fstream>
+#include <iterator>
+#include <vector>
+
 #include "mr/compatibility.hpp"
+#include "mr/persistence.hpp"
 #include <cstdio>
 #include <utility>
 
@@ -558,6 +563,17 @@ LoadOutcome Coordinator::load(const AdmitRequest& req, const AuthorityFrame& a) 
     outcome.set = set.id;
     outcome.loaded = set.aggregate_bytes;
   } else {
+    // Partial/failed load: keep committed (resident) members as loaded-but-not-ready
+    // partial residency, but cancel the reservation for the members that never
+    // committed so accounting returns to the exact baseline.
+    MemoryDomain* d = domains_.find(chosen->domain);
+    Bytes failed_bytes{0};
+    for (const auto& mid : member_ids) {
+      if (residencies_[mid].lifecycle != LifecycleState::Resident) {
+        failed_bytes = Bytes(failed_bytes.value() + residencies_[mid].allocated_bytes.value());
+      }
+    }
+    if (d != nullptr && !failed_bytes.is_zero()) { d->cancel_reservation(failed_bytes); }
     auto& s = sets_[set.id];
     s.complete = s.recompute_complete();
     s.ready = false;
@@ -652,6 +668,7 @@ MigrateOutcome Coordinator::migrate(const MigrateRequest& req, const AuthorityFr
   src.migration = mid;
   dst.migration = mid;
   src.transition_to(LifecycleState::Migrating);
+  dst.transition_to(LifecycleState::Planned);
   dst.transition_to(LifecycleState::Allocating);
 
   // Capture data and move bytes outside the lock.
@@ -705,6 +722,7 @@ MigrateOutcome Coordinator::migrate(const MigrateRequest& req, const AuthorityFr
   dst.handle = r.handle;
   dst.load_time_ns = monotonic_ns();
   dst.last_use_ns = dst.load_time_ns;
+  dst.transition_to(LifecycleState::Loading);
   dst.transition_to(LifecycleState::Validating);
   dst.transition_to(LifecycleState::Resident);
   dest_now->commit(bytes);
@@ -717,8 +735,10 @@ MigrateOutcome Coordinator::migrate(const MigrateRequest& req, const AuthorityFr
     dst.authority = AuthorityState::Provisional;
   }
   residencies_[dst.id] = dst;
-  // Retire the source and release its capacity.
+  // Retire the source, release its capacity, and free its backend buffer.
   if (auto* d = domains_.find(src_dom)) { d->release(src_bytes); }
+  if (backend_ && src_handle) { backend_->evict(src.cls, src_handle); }
+  src.handle = nullptr;
   src.authority = AuthorityState::Stale;
   src.readiness = ReadinessState::Stale;
   try { src.transition_to(LifecycleState::Retired); } catch (const Error&) {}
@@ -850,6 +870,7 @@ DemotionOutcome Coordinator::demote(const DemotionRequest& req, const AuthorityF
   }
   // Commit: change the residency's class/domain; keep identity + generation.
   if (auto* d = domains_.find(src_dom)) { d->release(src_bytes); }
+  if (backend_ && src_handle) { backend_->evict(res.cls, src_handle); }
   dest_now->commit(bytes);
   res.domain = dest_dom;
   res.cls = req.dest_class;
@@ -1096,6 +1117,62 @@ Json CoordinatorSnapshot::to_json() const {
   }
   root.set("residencies", std::move(jsRes));
   return root;
+}
+
+
+// ---------------------------------------------------------------------------
+// Persistence
+// ---------------------------------------------------------------------------
+void Coordinator::save_to(const std::string& path) const {
+  const CoordinatorSnapshot snap = snapshot();
+  const std::vector<std::uint8_t> bytes = PersistenceCodec::encode(snap);
+  std::ofstream out(path, std::ios::binary | std::ios::trunc);
+  throw_unless(out.is_open(), ErrorCode::Io, "cannot open output file: " + path);
+  out.write(reinterpret_cast<const char*>(bytes.data()), static_cast<std::streamsize>(bytes.size()));
+  throw_unless(out.good(), ErrorCode::Io, "failed to write persistence file: " + path);
+}
+
+void Coordinator::load_from(const std::string& path) {
+  std::ifstream in(path, std::ios::binary);
+  throw_unless(in.is_open(), ErrorCode::Io, "cannot open input file: " + path);
+  std::vector<std::uint8_t> bytes((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+  throw_unless(in.good() || in.eof(), ErrorCode::Io, "failed to read persistence file: " + path);
+  const CoordinatorSnapshot snap = PersistenceCodec::decode(bytes);
+
+  std::lock_guard<std::mutex> l(mutex_);
+  // Recover a fresh coordinator from durable metadata. Live residency is NOT
+  // published ready: each imported residency is demoted to Resident with
+  // provisional authority and not-ready readiness, and must be revalidated
+  // under a fresh worker boot before it can become authoritative.
+  models_.clear();
+  adapter_sets_.clear();
+  residencies_.clear();
+  sets_.clear();
+  active_set_by_model_.clear();
+  domains_.clear();
+  workers_.clear();
+
+  for (const auto& m : snap.models) {
+    models_.register_revision(m);
+    model_gens_[m.model] = ModelGeneration::first();
+  }
+  adapter_sets_ = snap.adapter_sets;
+  for (const auto& d : snap.domains) { domains_.register_domain(d); }
+  for (const auto& r : snap.residencies) {
+    Residency copy = r;
+    copy.handle = nullptr;
+    if (copy.lifecycle == LifecycleState::Ready) {
+      copy.lifecycle = LifecycleState::Resident;
+      copy.readiness = ReadinessState::NotReady;
+      copy.authority = AuthorityState::Provisional;
+    }
+    residencies_[copy.id] = std::move(copy);
+  }
+  for (const auto& s : snap.sets) {
+    ResidencySet copy = s;
+    copy.ready = false;
+    sets_[copy.id] = std::move(copy);
+  }
 }
 
 } // namespace mr

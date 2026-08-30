@@ -11,6 +11,7 @@ set(MR_CORE_SOURCES
   explain.cpp
   placement.cpp
   coordinator.cpp
+  persistence.cpp
   backends/memory_backend.cpp
 )
 

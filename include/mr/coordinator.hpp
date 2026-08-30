@@ -209,6 +209,14 @@ class Coordinator {
   [[nodiscard]] Json to_json() const;
   [[nodiscard]] CoordinatorSnapshot snapshot() const;
 
+  /// Persist the authoritative snapshot to a binary file (versioned,
+  /// checksummed). No live handles are persisted.
+  void save_to(const std::string& path) const;
+  /// Restore authoritative state from a binary file. Imported residency is
+  /// explicitly NOT published as ready: it must be revalidated under a fresh
+  /// worker boot / authority before readiness is granted.
+  void load_from(const std::string& path);
+
  private:
   mutable std::mutex mutex_;
   ResidencyBackend* backend_;

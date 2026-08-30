@@ -109,6 +109,8 @@ class ModelCatalog {
   [[nodiscard]] std::vector<ModelId> model_ids() const;
   [[nodiscard]] std::size_t size() const noexcept { return revisions_.size(); }
 
+  void clear() noexcept { revisions_.clear(); }
+
  private:
   std::vector<ModelRevision> revisions_;
 };
