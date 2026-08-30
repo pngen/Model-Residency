@@ -51,3 +51,13 @@ bench-output/
 *.tmp
 _probe.ps1
 _build.bat
+_cubuild.bat
+_cutest.bat
+_cudabuild.bat
+_release.bat
+_release.bat
+_consumer.bat
+mr_coord_ready.txt
+mr_recovery_test.bin
+mr_example_state.bin
+consumer/build-consumer/

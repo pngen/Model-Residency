@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(ModelResidencyConsumer LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+find_package(ModelResidency CONFIG REQUIRED)
+add_executable(consumer main.cpp)
+target_link_libraries(consumer PRIVATE ModelResidency::mr_core)
