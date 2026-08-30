@@ -7,6 +7,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 option(MR_ENABLE_CUDA "Enable CUDA residency validation backend" ON)
+
+if(MR_ENABLE_CUDA)
+  find_package(CUDAToolkit QUIET)
+  if(CUDAToolkit_FOUND)
+    enable_language(CUDA)
+  endif()
+endif()
 option(MR_BUILD_SHARED "Build shared library instead of static" OFF)
 option(MR_BUILD_TESTS "Build Mr tests" ON)
 option(MR_BUILD_BENCH "Build Mr benchmarks" ON)
@@ -20,12 +27,16 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
 
+# Strict warnings apply to C++ code only, via CMAKE_CXX_FLAGS. The CUDA
+# compiler uses CMAKE_CUDA_FLAGS, so bare /W4 /WX are never handed to nvcc
+# (which would misinterpret them); the CUDA target sets its own -Xcompiler flags.
 if(MSVC)
-  add_compile_options(/W4 /WX /permissive- /Zc:__cplusplus)
-  add_compile_options(/utf-8)
-  add_compile_options(/EHsc)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc")
+  # CUDA host flags are set per-target via -Xcompiler; avoid bare MSVC flags
+  # (nvcc misinterprets them as inputs) and avoid /WX (nvcc-generated stub code
+  # emits non-actionable warnings). The host library keeps strict /W4 /WX.
 elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
-  add_compile_options(-Wall -Wextra -Wpedantic -Werror)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -Werror")
 endif()
 
 include(GNUInstallDirs)

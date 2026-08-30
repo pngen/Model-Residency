@@ -32,3 +32,7 @@ set_target_properties(mr_core PROPERTIES
 if(MSVC)
   target_compile_options(mr_core PRIVATE /wd4251 /wd4275)
 endif()
+
+if(MR_ENABLE_CUDA AND CUDAToolkit_FOUND)
+  add_subdirectory(cuda)
+endif()

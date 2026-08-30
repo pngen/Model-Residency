@@ -1,0 +1,140 @@
+[
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\core\\uid.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\core\\uid.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/core/uid.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/core/uid.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\core\\enums.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\core\\enums.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/core/enums.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/core/enums.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\core\\byte_size.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\core\\byte_size.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/core/byte_size.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/core/byte_size.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\core\\json.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\core\\json.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/core/json.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/core/json.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\model.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\model.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/model.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/model.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\compatibility.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\compatibility.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/compatibility.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/compatibility.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\capacity.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\capacity.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/capacity.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/capacity.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\residency.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\residency.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/residency.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/residency.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\authority.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\authority.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/authority.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/authority.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\explain.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\explain.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/explain.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/explain.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\placement.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\placement.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/placement.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/placement.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\coordinator.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\coordinator.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/coordinator.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/coordinator.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\persistence.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\persistence.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/persistence.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/persistence.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /wd4251 /wd4275 /Fosrc\\CMakeFiles\\mr_core.dir\\backends\\memory_backend.cpp.obj /Fdsrc\\CMakeFiles\\mr_core.dir\\mr_core.pdb /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\backends\\memory_backend.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/backends/memory_backend.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/CMakeFiles/mr_core.dir/backends/memory_backend.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v13.1\\bin\\nvcc.exe -forward-unknown-to-host-compiler -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\include\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" -isystem \"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include\" -isystem \"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include\\cccl\" -D_WINDOWS -Xcompiler=\" /EHsc\" -Xcompiler=\"-O2 -Ob2\" -DNDEBUG -std=c++20 \"--generate-code=arch=compute_120,code=[compute_120,sm_120]\" -Xcompiler=-MD -Xcompiler=/W4 -Xcompiler=/wd4211 -Xcompiler=/wd4514 -Xcompiler=/wd4710 -Xcompiler=/wd4820 -Xcompiler=/wd4458 -x cu -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\cuda\\cuda_backend.cu\" -o src\\cuda\\CMakeFiles\\mr_cuda.dir\\cuda_backend.cu.obj -Xcompiler=-Fdsrc\\cuda\\CMakeFiles\\mr_cuda.dir\\mr_cuda.pdb,-FS",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/cuda/cuda_backend.cu",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/cuda/CMakeFiles/mr_cuda.dir/cuda_backend.cu.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\include\" -external:I\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include\" -external:I\"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.1\\include\\cccl\" -external:W0 /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fosrc\\cuda\\CMakeFiles\\cuda_residency_proof.dir\\cuda_proof.cpp.obj /Fdsrc\\cuda\\CMakeFiles\\cuda_residency_proof.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\cuda\\cuda_proof.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/src/cuda/cuda_proof.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/src/cuda/CMakeFiles/cuda_residency_proof.dir/cuda_proof.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\mr_test_main.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\mr_test_main.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/mr_test_main.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/mr_test_main.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_core.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_core.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_core.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_core.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_coordinator.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_coordinator.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_coordinator.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_coordinator.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_persistence.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_persistence.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_persistence.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_persistence.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_property.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_property.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_property.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_property.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_concurrency.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_concurrency.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_concurrency.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_concurrency.cpp.obj"
+},
+{
+  "directory": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\" -I\"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\src\\..\\include\" /DWIN32 /D_WINDOWS /EHsc /W4 /WX /permissive- /Zc:__cplusplus /utf-8 /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MD /Fotest\\CMakeFiles\\mr_tests.dir\\test_adversarial.cpp.obj /Fdtest\\CMakeFiles\\mr_tests.dir\\ /FS -c \"E:\\The Journey\\Coding\\GitHub\\production\\Model-Residency\\test\\test_adversarial.cpp\"",
+  "file": "E:/The Journey/Coding/GitHub/production/Model-Residency/test/test_adversarial.cpp",
+  "output": "E:/The Journey/Coding/GitHub/production/Model-Residency/build-cuda/test/CMakeFiles/mr_tests.dir/test_adversarial.cpp.obj"
+}
+]
