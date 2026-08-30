@@ -101,6 +101,7 @@ void Coordinator::mark_worker_lost(WorkerId worker, const AuthorityFrame& a) {
         if (auto* d = domains_.find(res.domain)) {
           d->release(res.allocated_bytes.value() > 0 ? res.allocated_bytes : res.byte_size);
         }
+        if (backend_ && res.handle) { backend_->evict(res.cls, res.handle); res.handle = nullptr; }
         res.authority = AuthorityState::Stale;
         res.readiness = ReadinessState::Failed;
         try { res.transition_to(LifecycleState::Invalidated); } catch (const Error&) {}
