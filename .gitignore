@@ -55,8 +55,8 @@ _cubuild.bat
 _cutest.bat
 _cudabuild.bat
 _release.bat
-_release.bat
 _consumer.bat
+_closure.bat
 mr_coord_ready.txt
 mr_recovery_test.bin
 mr_example_state.bin
