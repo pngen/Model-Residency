@@ -1,0 +1,51 @@
+# Build directories
+build/
+build-release/
+build-debug/
+out/
+cmake-build-*/
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+*.dir/
+_deps/
+
+# Generated config
+_cmake/
+export/
+
+# Compiled objects / binaries
+*.obj
+*.o
+*.lib
+*.a
+*.dll
+*.exe
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.bc
+
+# Test / benchmark output
+*.profraw
+*.profdata
+test-output/
+bench-output/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.user
+
+# Logs / temp
+*.log
+*.tmp
+_probe.ps1
+_build.bat
