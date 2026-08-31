@@ -68,8 +68,7 @@ Options: `MR_ENABLE_CUDA`, `MR_BUILD_TESTS`, `MR_BUILD_BENCH`, `MR_BUILD_EXAMPLE
 
 ### Test
 
-The test suite has **no timeouts** anywhere: no `timeoutMs`, no CTest `TIMEOUT`, no watchdogs. Tests run
-to natural completion.
+The test suite runs each test to completion.
 
 ```bat
 build-release\test\mr_tests.exe
